@@ -18,6 +18,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring.version>5.2.16.RELEASE</spring.version>
+        <jdk.demo.version>0.0.1-SNAPSHOT</jdk.demo.version>
     </properties>
 
     <developers>
@@ -30,7 +31,26 @@
 
     <modules>
         <module>jdk-common-demo</module>
+        <module>jdk-common-api</module>
     </modules>
+
+    <dependencyManagement>
+        <!--   内部依赖的模块     -->
+        <dependencies>
+            <!--jdk demo依赖-->
+            <dependency>
+                <groupId>com.naocn.leoj</groupId>
+                <artifactId>jdk-common-api</artifactId>
+                <version>${jdk.demo.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.naocn.leoj</groupId>
+                <artifactId>jdk-common-demo</artifactId>
+                <version>${jdk.demo.version}</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <resources>

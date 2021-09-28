@@ -9,28 +9,13 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>jdk-common-demo</artifactId>
+    <artifactId>jdk-common-api</artifactId>
     <packaging>jar</packaging>
-    <name>jdk-common-demo</name>
     <version>${jdk.demo.version}</version>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
-
-    <dependencies>
-        <dependency>
-            <groupId>com.naocn.leoj</groupId>
-            <artifactId>jdk-common-api</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.20</version>
-        </dependency>
-
-    </dependencies>
 
 </project>
