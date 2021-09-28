@@ -1,6 +1,5 @@
 # Jdk demo learning
 
 ## SPI机制学习
-com.naocun.leoj.jdk.common.demo.spi.Search
-
+jdk-common-demo: com.naocun.leoj.jdk.common.demo.SPIExample
 
